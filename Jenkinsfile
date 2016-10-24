@@ -1,3 +1,5 @@
 node {
-    sh 'echo hello world'
+    Stage ('Hello') {
+	    sh 'echo hello world'
+    }
 }
