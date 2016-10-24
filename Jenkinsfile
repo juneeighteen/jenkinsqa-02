@@ -7,7 +7,6 @@ node {
 
    milestone label: 'start-deploy', ordinal: 1
    stage('Deploy') {
-        sh 'echo I deploy all the things'    
+        sh 'echo I deploy all the things'
    }
-}
 }
