@@ -8,5 +8,10 @@ node {
    milestone label: 'start-deploy', ordinal: 1
    stage('Deploy') {
         sh 'echo I deploy all the things'
+        lock('test-resource') {
+            sleep 120
+            echo "That was a nice nap"
+        }
+
    }
 }
