@@ -3,6 +3,11 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 node {
     stage ('Hello') {
 	    sh 'echo hello world'
+
+    }
+
+    stage ('Hibernate') {
+        sleep Math.abs(new Random().nextInt() % 600)+1
     }
 
    milestone label: 'start-deploy', ordinal: 1
