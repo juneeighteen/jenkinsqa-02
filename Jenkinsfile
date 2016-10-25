@@ -17,7 +17,7 @@ node {
             sleep 120
             echo "That was a nice nap"
         }
-        lock(inversePrecedence:true, 'second-resource') {
+        lock(inversePrecedence:true, resource:'second-resource') {
             sleep 120
             echo "Another great nap"
         }
